@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>CSS Mem Slider</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Boogaloo"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>CSS Slider</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="slider">
+        <input type="radio" class="radio" name="slider" id="slide1" checked />
+        <input type="radio" class="radio" name="slider" id="slide2" />
+        <input type="radio" class="radio" name="slider" id="slide3" />
+        <input type="radio" class="radio" name="slider" id="slide4" />
+
+        <div class="images">
+          <div class="images-inner">
+            <div class="image-slide">
+              <div class="image">
+                <img src="./assets/slide1.webp" alt="image" />
+              </div>
+            </div>
+            <div class="image-slide">
+              <div class="image">
+                <img src="./assets/slide2.webp" alt="image" />
+              </div>
+            </div>
+            <div class="image-slide">
+              <div class="image">
+                <img src="./assets/slide3.webp" alt="image" />
+              </div>
+            </div>
+            <div class="image-slide">
+              <div class="image">
+                <img src="./assets/slide4.webp" alt="image" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="labels">
+          <div class="text">
+            <div class="text-inner">
+              <div class="text-slide">Мой код за день до дедлайна</div>
+              <div class="text-slide">Когда тестировщик нашел баг</div>
+              <div class="text-slide">Потратил 24 часа на отладку</div>
+              <div class="text-slide">Выучил Javascript на тренинге</div>
+            </div>
+          </div>
+          <div class="fake-radio">
+            <label for="slide1" class="radio-btn"></label>
+            <label for="slide2" class="radio-btn"></label>
+            <label for="slide3" class="radio-btn"></label>
+            <label for="slide4" class="radio-btn"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
